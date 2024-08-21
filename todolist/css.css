@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Increased width */
+    max-height: 85vh; /* Slightly increased max height */
+    text-align: center;
+    overflow-y: auto; /* Enables scrolling */
+}
+
+/* Scrollbar Styling */
+.container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 4px; /* Rounds the corners of the track */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 123, 255, 0.4); /* Translucent scrollbar color */
+    border-radius: 4px; /* Rounds the corners of the scrollbar */
+    border: 2px solid #f1f1f1; /* Adds a border around the scrollbar */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 123, 255, 1); /* Fully opaque color when hovered */
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+li button {
+    background: #ff4d4d;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #d93636;
+}
